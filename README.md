@@ -1,4 +1,3 @@
-[README (3).md](https://github.com/user-attachments/files/27060823/README.3.md)
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:16213e&height=120&section=header" width="100%"/>
 Dhruv Baruah
