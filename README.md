@@ -1,110 +1,124 @@
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:16213e&height=120&section=header" width="100%"/>
-Dhruv Baruah
-Full-Stack Engineer · Final Year CSE @ ADTU · Graduating 2026<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,30:0d2618,60:0d1117,100:0d1117&height=140&section=header&text=Dhruv%20Baruah&fontSize=42&fontColor=e6edf3&fontAlignY=65&desc=Full-Stack%20Engineer%20%C2%B7%20CSE%20%40%20ADTU%20%C2%B7%20Graduating%202026&descAlignY=85&descSize=14&descColor=8b949e" width="100%"/>
+<!--
+  GitHub PROFILE README for Dhruv Baruah.
+  This goes in a repo named exactly "DHruVBaruAH" (same as your username) so GitHub shows it on your profile.
+  Keep header.svg in the repo ROOT next to this file.
+  TODO: fix the three project repo links below (two currently point at your profile, not the repo).
+-->
 
-<div align="center">
+<p align="center">
+  <img src="./header.svg" alt="Dhruv Baruah — Backend Engineer, Machine Learning Practitioner, Systems Builder" width="850">
+</p>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-dhruv--portfolio--red.vercel.app-3fb950?style=flat-square&logo=vercel&logoColor=white&labelColor=0d1117)](https://dhruv-portfolio-red.vercel.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-dhruv--baruah-0077B5?style=flat-square&logo=linkedin&logoColor=white&labelColor=0d1117)](https://www.linkedin.com/in/dhruv-baruah)
-[![Email](https://img.shields.io/badge/Email-dhruvbaruah51%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white&labelColor=0d1117)](mailto:dhruvbaruah51@gmail.com)
-[![Status](https://img.shields.io/badge/Status-Open%20to%20SDE--1%20Roles-3fb950?style=flat-square&labelColor=0d2618)](mailto:dhruvbaruah51@gmail.com)
+## About
 
-</div>
+I'm a final-year Computer Science & Engineering student who builds production backend systems and research-driven machine learning. My backend work centers on Java and Spring Boot — auth, payments, and data integrity for systems real users touch. My ML work is deliberately rigorous: I care more about evaluation that holds up under scrutiny than about a headline accuracy number. Currently looking for software and machine learning engineering roles.
+
+## Selected Work
+
+### House of OVRN — Production E-Commerce Backend &nbsp;·&nbsp; [Repo](https://github.com/DHruVBaruAH)
+
+Live backend for a streetwear brand. A containerized Spring Boot service handling catalog, inventory, cart, and checkout.
+
+- OAuth2 (Google / GitHub) and JWT authorization via Spring Security across every endpoint
+- Payment-gateway integration with HMAC-SHA256 signature verification; persistent server-side cart
+- Schema integrity enforced through Flyway migrations; deployed on a Docker-based cloud setup
+
+![Java](https://img.shields.io/badge/Java_21-21262D?style=flat-square&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-21262D?style=flat-square&logo=springboot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring_Security-21262D?style=flat-square&logo=springsecurity&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-21262D?style=flat-square&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-21262D?style=flat-square&logo=docker&logoColor=white)
+![Flyway](https://img.shields.io/badge/Flyway-21262D?style=flat-square&logo=flyway&logoColor=white)
+
+### AdaptED v2 — EEG-Based ADHD Classification &nbsp;·&nbsp; [Repo](https://github.com/DHruVBaruAH/AdaptED-v2-EEG)
+
+A study of how the *evaluation protocol* — not model quality — drives reported accuracy in EEG-based ADHD classification.
+
+- The same 19-channel pipeline scored **93.28%** under epoch-shuffled cross-validation but only **74.17% (AUC 0.7813)** under pre-specified leave-one-subject-out (LOSO) validation
+- The ~19-point gap is an evaluation-protocol artifact, not a modeling gain — LOSO is the deployment-realistic number, and it's the one I report
+- Full reproducible pipeline: MNE feature extraction (266 features), feature selection, RBF-kernel SVM; 120 clinical subjects (Nasrabadi); Dockerized for repeatable runs
+
+![Python](https://img.shields.io/badge/Python-21262D?style=flat-square&logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-21262D?style=flat-square&logo=scikitlearn&logoColor=white)
+![MNE](https://img.shields.io/badge/MNE-21262D?style=flat-square&logoColor=white)
+![SVM](https://img.shields.io/badge/RBF--SVM-21262D?style=flat-square&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-21262D?style=flat-square&logo=docker&logoColor=white)
+
+### AdaptED — AI Adaptive Learning Platform &nbsp;·&nbsp; [Repo](https://github.com/DHruVBaruAH)
+
+Full-stack adaptive learning platform with a dedicated ML service for ADHD behavioral assessment.
+
+- Stacking ensemble (LightGBM + XGBoost + CatBoost) on CPT-II clinical features; CV R² = 0.708, chosen over single models for generalization on a small dataset
+- Polyglot architecture: Spring Boot + FastAPI ML service + React/TypeScript frontend
+- Anthropic Claude API integration, validated end-to-end with unit and integration tests
+
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-21262D?style=flat-square&logo=springboot&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-21262D?style=flat-square&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-21262D?style=flat-square&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-21262D?style=flat-square&logo=typescript&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-21262D?style=flat-square&logo=postgresql&logoColor=white)
+
+## Tech Stack
+
+**Backend** &nbsp;
+![Java](https://img.shields.io/badge/Java-21262D?style=flat-square&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-21262D?style=flat-square&logo=springboot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring_Security-21262D?style=flat-square&logo=springsecurity&logoColor=white)
+![Hibernate](https://img.shields.io/badge/Hibernate-21262D?style=flat-square&logo=hibernate&logoColor=white)
+![REST](https://img.shields.io/badge/REST_APIs-21262D?style=flat-square&logoColor=white)
+
+**Machine Learning** &nbsp;
+![scikit-learn](https://img.shields.io/badge/scikit--learn-21262D?style=flat-square&logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-21262D?style=flat-square&logoColor=white)
+![LightGBM](https://img.shields.io/badge/LightGBM-21262D?style=flat-square&logoColor=white)
+![CatBoost](https://img.shields.io/badge/CatBoost-21262D?style=flat-square&logoColor=white)
+![SHAP](https://img.shields.io/badge/SHAP-21262D?style=flat-square&logoColor=white)
+![MNE](https://img.shields.io/badge/MNE-21262D?style=flat-square&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-21262D?style=flat-square&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-21262D?style=flat-square&logo=numpy&logoColor=white)
+
+**Data** &nbsp;
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-21262D?style=flat-square&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-21262D?style=flat-square&logo=mysql&logoColor=white)
+
+**Infrastructure & Tools** &nbsp;
+![Docker](https://img.shields.io/badge/Docker-21262D?style=flat-square&logo=docker&logoColor=white)
+![Flyway](https://img.shields.io/badge/Flyway-21262D?style=flat-square&logo=flyway&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-21262D?style=flat-square&logo=githubactions&logoColor=white)
+![Railway](https://img.shields.io/badge/Railway-21262D?style=flat-square&logo=railway&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-21262D?style=flat-square&logo=vercel&logoColor=white)
+![Git](https://img.shields.io/badge/Git-21262D?style=flat-square&logo=git&logoColor=white)
+
+## Now
+
+Deepening production backend work — Spring Security and OAuth2 architectures — alongside applied ML and the MLOps fundamentals that make it deployable: reproducible pipelines, containerized evaluation, and experiment tracking.
+
+## Recognition
+
+- **Google Developer Student Club** — Co-Head, App Development (2023–24); led sprint-based Java workshops for 50+ students
+- **TCS NQT 2025** — cleared national qualifier
+- **Edunet Foundation ML Program** (Shell India, 2025) — built an energy-prediction pipeline with SHAP-based explainability
+
+<!--
+  ============================================================
+  OPTIONAL — GitHub stats. KEEP ONLY IF YOUR NUMBERS LOOK GOOD.
+  These widgets expose your real commit count, stars, and language split.
+  If your activity is light, DELETE this whole block — sparse stats read
+  worse than no stats. Streak-stats deliberately omitted (most punishing if low).
+  Top-languages hides html/css so your Java/Python read clearly.
+  ============================================================
+-->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=DHruVBaruAH&show_icons=true&hide_border=true&count_private=true&theme=transparent&title_color=E6EDF3&text_color=8B949E&icon_color=E3B341" height="160" alt="GitHub stats">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DHruVBaruAH&layout=compact&hide_border=true&hide=html,css&theme=transparent&title_color=E6EDF3&text_color=8B949E" height="160" alt="Top languages">
+</p>
 
 ---
 
-```
-> Full-stack engineer. I build systems end-to-end — backend architecture,
-  ML pipelines, and polished frontends. Sole developer on two production-grade projects.
-  Based in Guwahati, Assam. Available from 2026.
-```
-
----
-
-## `// featured projects`
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🧠 AdaptED
-**Adaptive learning platform for ADHD assessment**
-
-Polyglot microservices system built as sole developer. XGBoost prediction model on CPT-II behavioral data, AI-powered study plan generation via Anthropic API, React frontend with clinical-editorial design.
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
-
-</td>
-<td width="50%" valign="top">
-
-### 👗 ToneYou
-**AI outfit recommendation using Claude Vision**
-
-Analyzes outfit photos and generates personalized style feedback using Claude Vision API. Next.js 15 App Router frontend with FastAPI backend.
-
-![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### ⚡ EV//LENS
-**EV charging station finder**
-
-Full-stack app to locate and filter EV chargers near you. Spring Boot REST API with Next.js 15 frontend.
-
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_v4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
-
-</td>
-<td width="50%" valign="top">
-
-### 🔧 More on the way
-Currently building and shipping. Check pinned repositories below for the latest.
-
-[![GitHub](https://img.shields.io/badge/See%20all%20repos-0d1117?style=flat-square&logo=github&logoColor=white)](https://github.com/DHruVBaruAH?tab=repositories)
-
-</td>
-</tr>
-</table>
-
----
-
-## `// tech stack`
-
-**Backend**
-`Java` `Spring Boot` `Python` `FastAPI` `REST APIs` `Microservices`
-
-**Frontend**
-`React` `Next.js 15` `TypeScript` `Vite` `Tailwind CSS`
-
-**Data & ML**
-`PostgreSQL` `MySQL` `XGBoost` `SHAP` `Pandas` `Scikit-learn`
-
-**Infra & Tools**
-`Git` `Docker` `Railway` `Render` `Vercel` `Neon`
-
----
-// github stats
-<div align="center">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=DHruVBaruAH&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&title_color=3fb950&icon_color=3fb950&text_color=8b949e&bg_color=0d1117" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DHruVBaruAH&layout=compact&theme=github_dark&hide_border=true&langs_count=6&title_color=3fb950&text_color=8b949e&bg_color=0d1117" />
-</div>
-
-<div align="center">
-$ open --to-hire dhruv-baruah
-Open to SDE-1 roles · Full Stack · Backend · Software Engineering
-Guwahati, Assam · Available 2026 · CGPA 8.17
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,30:0d2618,60:0d1117,100:0d1117&height=80&section=footer" width="100%"/>
-</div>
-
+<p align="center">
+  <a href="https://linkedin.com/in/dhruv-baruah"><img src="https://img.shields.io/badge/LinkedIn-21262D?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  &nbsp;
+  <a href="https://github.com/DHruVBaruAH"><img src="https://img.shields.io/badge/GitHub-21262D?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
+  &nbsp;
+  <a href="mailto:dhruvbaruah51@gmail.com"><img src="https://img.shields.io/badge/Email-21262D?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
